@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+int main()
+{
+  int a,i,j,b,f;
+  printf("-To create array-");
+  printf("\n Enter array size:");
+  scanf("%d",&a);
+  int arr[a];
+  for(b=0;b<a;b++)
+  {
+  printf("Enter array elemnets:");
+  scanf("%d",&arr[b]);
+  }
+  for(i=0;i<a;i++)
+  {
+      for(j=i+1;j<a;j++)
+{
+          if(arr[i]==arr[j])
+          {
+              printf("\n %d and %d are duplicate in index %d and %d.",arr[i],arr[j],i,j);
+              f=a-1;
+      }
+     
+     }
+      
+  }
+  if(f=a)
+      {
+          printf("There is no duplicate element!");
+      }
+}
